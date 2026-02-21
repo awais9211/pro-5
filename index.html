@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skill Progress</title>
+    <style>
+
+        body{
+            margin:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            font-family:Arial, sans-serif;
+            background:#4e73df;
+        }
+
+        .card{
+            width:400px;
+            background:#f2f2f2;
+            padding:30px;
+            border-radius:10px;
+        }
+
+        .skill{
+            margin-bottom:25px;
+        }
+
+        .skill p{
+            margin:0 0 8px 0;
+            font-weight:bold;
+        }
+
+        .progress{
+            width:100%;
+            height:8px;
+            background:#ddd;
+            border-radius:5px;
+            position:relative;
+        }
+
+        .progress div{
+            height:8px;
+            background:#2e59d9;
+            border-radius:5px;
+        }
+
+        .percent{
+            position:absolute;
+            right:0;
+            top:-25px;
+            background:#2e59d9;
+            color:white;
+            font-size:12px;
+            padding:3px 6px;
+            border-radius:4px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="card">
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="progress">
+            <div style="width:90%;"></div>
+            <span class="percent">90%</span>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="progress">
+            <div style="width:70%;"></div>
+            <span class="percent">70%</span>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>JavaScript</p>
+        <div class="progress">
+            <div style="width:50%;"></div>
+            <span class="percent">50%</span>
+        </div>
+    </div>
+
+    <div class="skill">
+        <p>NodeJS</p>
+        <div class="progress">
+            <div style="width:30%;"></div>
+            <span class="percent">30%</span>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
